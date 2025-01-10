@@ -43,7 +43,21 @@ h2, h3, li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.comics-list {
+.description {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 0 10px black;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px black;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin-left: 33%;
+
+}
+
+.comics-list, .comics-list-name {
     background-color: rgb(70, 119, 157);
     width: 20%;
     border: 2px solid red;

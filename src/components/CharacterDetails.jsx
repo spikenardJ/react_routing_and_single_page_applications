@@ -10,9 +10,10 @@ const CharacterDetails = () => {
     const publicKey = "4d52fb3fa1ef52af3d6b38218aff5477";
     const ts = 1;
     const hash = "a80ea7d0806646c1f3b6bf37422fc6fd";
-    const apiUrl = `http://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
+    const apiUrl = `http://gateway.marvel.com/v1/public/characters/${id}?ts=${ts}&limit=100&apikey=${publicKey}&hash=${hash}`;
 
     useEffect(() => {
+        console.log(id)
         const fetchCharacterDetail = async () => {
           try {
             const response = await axios.get(`${apiUrl}`);
@@ -40,14 +41,12 @@ const CharacterDetails = () => {
       return (
         <div className="character-detail">
           <h2>{character.name}</h2>
-          {/* <h2><Link to="/browse-characters">Go Back</Link></h2> */}
-          <p>{character.description || "No description available."}</p>
-          {/* <p>{character.description}</p> */}
+          <p className="description">{character.description || "No description available."}</p>
           {character.thumbnail && (
                 <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`} alt={character.name} />
             )}
-          <h3 className="comics-list">Comics:</h3>
-          <ul>
+          <h3 className="comics-list-name">Comics:</h3>
+          <ul className="comics-list">
             {character.name}{character.comics.items.length > 0 ? (
               character.comics.items.map((comic, index) => (
                 <li key={index}>{comic.name}</li>
