@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import { apiUrl } from "./Config.jsx"
+// import { characterIdApiUrl } from "../config"
 
 const CharacterDetails = () => {
     const [character, setCharacter] = useState(null);

@@ -45,6 +45,7 @@ h2, h3, li {
 
 .description {
     color: white;
+    background-color: rgb(70, 119, 157);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: 0 0 10px black;
     border-radius: 15px;
