@@ -1,0 +1,142 @@
+body {
+    text-align: center;
+    background-image: url("./images/marvel-pic.jpg");
+}
+
+.home-welcome {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+ul{
+    background-color: rgb(70, 119, 157);
+    border: 2px solid red;
+    width: 40%;
+    text-align: left;
+    padding: 20px;
+    list-style-type: none;
+    margin: 0 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+  
+ul, li {
+    color: navy;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+img {
+    border-radius: 15px;
+    width: 100px;
+    border: 2px solid navy;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+  
+h2, h3, li {
+    color: navy;
+    margin: 20px 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.comics-list {
+    background-color: rgb(70, 119, 157);
+    width: 20%;
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+p {
+    color: white;
+    margin: 20px 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    color: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px black;
+}
+    
+.character-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+    
+.character-list h2 {
+    margin-bottom: 10px;
+}
+    
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+  
+.character-card {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 20px;
+    border: 6px solid navy;
+    box-shadow: 0 3px 6px rgba(0, 0, 10, 0.4);
+    margin: 30px;
+    padding: 10px 30px;
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.character-thumbnail {
+    width: 100%;
+    height: auto;
+}
+  
+.character-detail {
+    margin-top: 20px;
+}
+  
+.character-detail h2 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: navy;
+    overflow: hidden;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 0 10px black;
+
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav a.active {
+    background-color: red;
+    color: white;
+}
+
+.nav-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
