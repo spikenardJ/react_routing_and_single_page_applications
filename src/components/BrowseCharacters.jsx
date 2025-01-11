@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import { apiUrl } from "../config"
+import { hash, timeStamp, publicKey } from "../config"
 
 const BrowseCharacters = ({ onCharacterClick }) => {
     const [characters, setCharacters] = useState([]);
     const [offset, setOffset] = useState(0);
     const [loading, setLoading] = useState(false);
-    const publicKey = "4d52fb3fa1ef52af3d6b38218aff5477";
-    const ts = 1;
-    const hash = "a80ea7d0806646c1f3b6bf37422fc6fd";
-    const apiUrl = `http://gateway.marvel.com/v1/public/characters?ts=${ts}&limit=100&apikey=${publicKey}&hash=${hash}`;
+    // const publicKey = "4d52fb3fa1ef52af3d6b38218aff5477";
+    // const ts = 1;
+    // const hash = "a80ea7d0806646c1f3b6bf37422fc6fd";
+    const apiUrl = `http://gateway.marvel.com/v1/public/characters?ts=${timeStamp}&limit=100&apikey=${publicKey}&hash=${hash}`;
   
     useEffect(() => {
       const fetchCharacters = async () => {

@@ -1,16 +1,16 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import { characterIdApiUrl } from "../config"
+import { hash, timeStamp, publicKey } from "../config"
 
 const CharacterDetails = () => {
     const [character, setCharacter] = useState(null);
     const [loading, setLoading] = useState(true);
     const { id } = useParams();
-    const publicKey = "4d52fb3fa1ef52af3d6b38218aff5477";
-    const ts = 1;
-    const hash = "a80ea7d0806646c1f3b6bf37422fc6fd";
-    const apiUrl = `http://gateway.marvel.com/v1/public/characters/${id}?ts=${ts}&limit=100&apikey=${publicKey}&hash=${hash}`;
+    // const publicKey = "4d52fb3fa1ef52af3d6b38218aff5477";
+    // const ts = 1;
+    // const hash = "a80ea7d0806646c1f3b6bf37422fc6fd";
+    const apiUrl = `http://gateway.marvel.com/v1/public/characters/${id}?ts=${timeStamp}&limit=100&apikey=${publicKey}&hash=${hash}`;
 
     useEffect(() => {
         console.log(id)
