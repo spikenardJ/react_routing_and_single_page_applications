@@ -1,22 +1,19 @@
 import React from "react";
 import { Route, Routes, NavLink } from "react-router-dom";
-import Home from "./components/Home";
-import BrowseCharacters from "./components/BrowseCharacters";
-import CharacterDetails from "./components/CharacterDetails";
-import Comics from "./components/Comics";
+import HomePage from "./components/HomePage";
 import NavigationBar from "./components/NavigationBar";
 import NotFound from "./components/NotFound";
-import "./MarvelStyle.css";
+import ProductsPage from "./components/ProductsPage";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Style.css";
 
 function App() {
     return (
-        <div>
+        <div className="app-container">
           <NavigationBar />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/browse-characters" element={<BrowseCharacters />} />
-                <Route path="/character-details/:id" element={<CharacterDetails />} />
-                <Route path="/comics" element={<Comics />} />
+                <Route path="/" element={<HomePage />} />
+                <Route path="/products-page" element={<ProductsPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
