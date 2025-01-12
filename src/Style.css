@@ -9,6 +9,13 @@ p, h1 {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+h3 {
+    text-align: center;
+    color: darkslategray;
+    padding-bottom: 40px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; 
+}
+
 .card {
     padding: 1.5em .5em .5em;
     border-radius: 2em;
